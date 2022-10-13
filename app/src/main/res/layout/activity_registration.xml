@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.registration.RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/img_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="23dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toTopOf="@+id/tv_enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="29dp"
+        android:text="Вход"
+        android:textColor="@color/main_value"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/img_sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/img_sign_in" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="13dp"
+        android:hint="Электронная почта"
+        android:inputType="textWebEmailAddress|textEmailAddress"
+        android:textColorHint="@color/main_value"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_enter"
+        app:met_textColorHint="@color/main_value" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="11dp"
+        android:textColorHint="@color/main_value"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/child_age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:met_textColorHint="@color/main_value" />
+
+    <EditText
+        android:id="@+id/child_age"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/main_value"
+        android:hint="Age"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_privacy_policy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:met_textColorHint="@color/main_value" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/btn_bg_colored"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_privacy_policy" />
+
+    <CheckBox
+        android:id="@+id/checkBox_privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:buttonTint="@color/main_value"
+        android:text="privacy policy"
+        android:textColor="#21A8F4"
+        app:layout_constraintBottom_toTopOf="@+id/register_button"
+        app:layout_constraintStart_toStartOf="@+id/child_age"
+        app:layout_constraintTop_toBottomOf="@+id/child_age" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
