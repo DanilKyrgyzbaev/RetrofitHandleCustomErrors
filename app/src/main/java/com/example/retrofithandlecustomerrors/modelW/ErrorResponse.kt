@@ -1,4 +1,4 @@
-package com.example.retrofithandlecustomerrors.model
+package com.example.retrofithandlecustomerrors.modelW
 
 import com.google.gson.annotations.SerializedName
 

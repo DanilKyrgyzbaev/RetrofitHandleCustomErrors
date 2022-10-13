@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.retrofithandlecustomerrors.databinding.ActivitySignInBinding
-import com.example.retrofithandlecustomerrors.model.User
+import com.example.retrofithandlecustomerrors.modelW.User
 import com.example.retrofithandlecustomerrors.ui.MainActivity
 
 class SignInActivity : AppCompatActivity() {

@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.retrofithandlecustomerrors.databinding.ActivityRegistrationBinding
-import com.example.retrofithandlecustomerrors.model.Registration
+import com.example.retrofithandlecustomerrors.modelW.Registration
 import com.example.retrofithandlecustomerrors.ui.MainActivity
 
 class RegistrationActivity : AppCompatActivity() {

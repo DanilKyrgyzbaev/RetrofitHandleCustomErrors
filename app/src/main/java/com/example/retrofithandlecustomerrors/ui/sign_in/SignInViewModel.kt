@@ -3,7 +3,7 @@ package com.example.retrofithandlecustomerrors.ui.sign_in
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.retrofithandlecustomerrors.model.User
+import com.example.retrofithandlecustomerrors.modelW.User
 import com.example.retrofithandlecustomerrors.net_work_api.ApiService
 import com.example.retrofithandlecustomerrors.net_work_api.RetrofitClient
 import retrofit2.Call

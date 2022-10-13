@@ -1,7 +1,7 @@
 package com.example.retrofithandlecustomerrors.net_work_api
 
-import com.example.retrofithandlecustomerrors.model.Registration
-import com.example.retrofithandlecustomerrors.model.User
+import com.example.retrofithandlecustomerrors.modelW.Registration
+import com.example.retrofithandlecustomerrors.modelW.User
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.POST

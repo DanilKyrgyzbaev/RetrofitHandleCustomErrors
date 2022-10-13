@@ -1,4 +1,4 @@
-package com.example.retrofithandlecustomerrors.model
+package com.example.retrofithandlecustomerrors.modelW
 
 data class Registration(
     val email: String,
